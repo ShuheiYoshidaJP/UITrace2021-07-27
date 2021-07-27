@@ -20,6 +20,11 @@ struct ContentView: View {
 }
 
 struct CashView: View {
+    init() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = .black
+        UIPageControl.appearance().pageIndicatorTintColor = .gray
+    }
+    
     var body: some View {
         VStack {
             HStack {
